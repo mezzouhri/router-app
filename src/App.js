@@ -20,9 +20,10 @@ class App extends Component {
             <Route path="/products" component={Products} />
             <Route path="/posts" component={Posts} />
             <Route path="/admin" component={Dashboard} />
-            <Route path="/NotFound" component={NotFound} />
+            <Route path="/not-found" component={NotFound} />
             <Route path="/" component={Home} />
-            <Redirect to="/NotFound" />
+            <Redirect from="/messages" to="/posts" />
+            <Redirect to="/not-found" />
           </Switch>
         </div>
       </div>
